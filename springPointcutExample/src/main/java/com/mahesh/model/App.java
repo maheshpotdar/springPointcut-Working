@@ -9,7 +9,8 @@ public class App {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/mahesh/model/spring.xml");
 		ShapeService service = context.getBean("ss", ShapeService.class);
-		System.out.println(service.getCircle().getName());
+		System.out.println(""+service.getCircle().getName());
+		System.out.println(""+service.getTraingle().getName());
 	}
 
 }
